@@ -35,11 +35,11 @@ export default function LoginForm() {
             </label>
             <div className="relative w-full">
               <div className="relative flex items-center">
-                <Input
+                <input
                   id="email"
                   type="email"
-                  className=""
-                  placeholder={email ? "" : "Enter email address"}
+                  className="peer block w-full appearance-none placeholder:text-gray-400 border border-black-10 bg-white px-3.5 p-2.5 focus:outline-none h-[48px] rounded-6 text-black-100 placeholder-transparent focus:border-black-10"
+                  placeholder='Enter email address'
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -56,11 +56,12 @@ export default function LoginForm() {
             </label>
             <div className="relative w-full">
               <div className="relative flex items-center">
-                <Input
+                <input
                   id="password"
                   type={showPassword ? "text" : "password"}
-                  placeholder={password ? "" : "Password"}
+                  placeholder="Password"
                   required
+                   className="peer block w-full appearance-none placeholder:text-gray-400 border border-black-10 bg-white px-3.5 p-2.5 focus:outline-none h-[48px] rounded-6 text-black-100 placeholder-transparent focus:border-black-10"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   autoComplete="new-password"

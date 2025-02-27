@@ -3,6 +3,7 @@
 import { fontBodyNormal, fontBigTypoDesktop } from "@/styles/typography";
 import Image from "next/image"; // Import Next.js Image component
 import logo from "@/icons/Logo-primary.svg";
+import logoWhite from "@/icons/Logo.png";
 
 const BG = "https://s3-alpha-sig.figma.com/img/97c5/77dd/b047dd3c09ed673e80bc7a6d07bed063?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=c7G-LRN-ZdwgHk4t4mlU~hClSFddpnOcepvluPiXgTcbZIr4cklk1uAc0u19thuNi0K7VDoh1sBq3-95n6tPH~FeC~CImN7WrcaZ4y-pu20ghNlCPO3Jq3TqwvpkqoUMoCL6dBlVlsEAbtW9uYc7y~DEndkeI49yYvHRLaR2yMviluIhTLXU~gF5eKoXYi7ViyEzBsHYURfd3hZkHjxQRnItXeL31wN-jg6tGcCryGf5E9j9PYkc2al6fCykIokTj5HvSB~PmwtB0USacOVBNAk5KGDyvrm860fCeUlfwVsGckpecmJ4gHY62vZ4MejG2GPoiy~V79IN2oT0rC5D7A__";
 
@@ -10,7 +11,7 @@ export default function ServicePanel() {
   return (
  <>
     <div className="flex items-center gap-2 w-full justify-center lg:hidden">
-    <Image src={logo} alt="Logo" width={80} height={40} className="w-auto h-10" />
+    <Image src={logo} alt="Logo" width={80} height={40} className="w-[10rem] h-auto" />
     </div>
     <div className="relative hidden w-1/4 min-w-[480px] overflow-hidden rounded-5 p-4 lg:flex">
       {/* Background Image */}
@@ -25,7 +26,7 @@ export default function ServicePanel() {
 
       <div className="relative z-10 h-full md:p-4 flex flex-col">
         <div className="flex items-center gap-2">
-          <Image src={logo} alt="Logo" width={80} height={40} className="w-auto h-10" />
+          <Image src={logoWhite} alt="Logo" width={80} height={40} className="w-auto h-10" />
         </div>
         <div 
   className="mt-auto">

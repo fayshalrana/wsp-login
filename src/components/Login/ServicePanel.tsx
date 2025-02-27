@@ -3,7 +3,7 @@
 import { fontBodyNormal, fontBigTypoDesktop } from "@/styles/typography";
 import Image from "next/image"; 
 import logo from "@/icons/Logo-primary.svg";
-import logoWhite from "@/icons/Logo.png";
+import logoWhite from "@/icons/logo.png";
 
 const BG = "https://s3-alpha-sig.figma.com/img/97c5/77dd/b047dd3c09ed673e80bc7a6d07bed063?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=c7G-LRN-ZdwgHk4t4mlU~hClSFddpnOcepvluPiXgTcbZIr4cklk1uAc0u19thuNi0K7VDoh1sBq3-95n6tPH~FeC~CImN7WrcaZ4y-pu20ghNlCPO3Jq3TqwvpkqoUMoCL6dBlVlsEAbtW9uYc7y~DEndkeI49yYvHRLaR2yMviluIhTLXU~gF5eKoXYi7ViyEzBsHYURfd3hZkHjxQRnItXeL31wN-jg6tGcCryGf5E9j9PYkc2al6fCykIokTj5HvSB~PmwtB0USacOVBNAk5KGDyvrm860fCeUlfwVsGckpecmJ4gHY62vZ4MejG2GPoiy~V79IN2oT0rC5D7A__";
 

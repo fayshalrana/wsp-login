@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Input } from "@/components/input";
 import { MainButton } from "@/components/mainButton";
 import Checkbox from "@/components/checkbox";
 import { fontTitle1, fontBodyNormal, fontCaptionBold, fontBodyLinkNormal, fontButtonLarge } from '@/styles/typography';

@@ -1,7 +1,7 @@
 "use client";
 
 import { fontBodyNormal, fontBigTypoDesktop } from "@/styles/typography";
-import Image from "next/image"; // Import Next.js Image component
+import Image from "next/image"; 
 import logo from "@/icons/Logo-primary.svg";
 import logoWhite from "@/icons/Logo.png";
 

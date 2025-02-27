@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import { Input } from "@/components/input";
 import { MainButton } from "@/components/mainButton";
@@ -41,7 +39,7 @@ export default function LoginForm() {
                   id="email"
                   type="email"
                   className=""
-                  placeholder="Enter email address"
+                  placeholder={email ? "" : "Enter email address"}
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -61,7 +59,7 @@ export default function LoginForm() {
                 <Input
                   id="password"
                   type={showPassword ? "text" : "password"}
-                  placeholder="Password"
+                  placeholder={password ? "" : "Password"}
                   required
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
@@ -103,7 +101,7 @@ export default function LoginForm() {
             type="submit"
             className="inline-flex items-center justify-center rounded-6 transition-colors hover:outline-black-10 hover:outline hover:outline-4 disabled:bg-black-5 disabled:text-black-40 disabled:outline-none px-8 h-[48px] text-[14px] md:text-[16px] lg:text-[16px] leading-[24px] tracking-[-0.01em] font-bold bg-black-100 text-white-100 w-full"
             disabled={!email || !password}
-              variant="primary"
+            variant="primary"
           >
             Sign In
           </MainButton>

@@ -77,7 +77,7 @@ export default function LoginForm() {
                     width="24"
                     height="24"
                     decoding="async"
-                    src={showPassword ? "/eyeoff.svg" : "/eye.svg"}
+                    src={!showPassword ? "/eyeoff.svg" : "/eye.svg"}
                   />
                 </button>
               </div>

@@ -20,6 +20,7 @@ export default function LoginForm() {
         {/* Welcome Message */}
         <div className="text-center">
           <h2 className={`${fontTitle1} text-gray-900`}>Welcome Back</h2>
+          <h2 className={`${fontTitle1} text-gray-900 lg:hidden leading-0`}>Service Panel</h2>
           <p className={`${fontBodyNormal} text-gray-600 mt-2`}>
             Manage, streamline, and thrive effortlessly.
           </p>
@@ -37,7 +38,7 @@ export default function LoginForm() {
                 <input
                   id="email"
                   type="email"
-                  className="peer block w-full appearance-none placeholder:text-gray-400 border border-black-10 bg-white px-3.5 p-2.5 focus:outline-none h-[48px] rounded-6 text-black-100 placeholder-transparent focus:border-black-10"
+                  className="peer block w-full appearance-none placeholder:text-gray-400 border border-black-10 bg-white px-3.5 p-2.5 focus:outline-none h-[48px] rounded-6 text-black-100 text-[16px] leading-[20px] font-normal placeholder-transparent focus:border-black-10"
                   placeholder='Enter email address'
                   required
                   value={email}
@@ -60,7 +61,7 @@ export default function LoginForm() {
                   type={showPassword ? "text" : "password"}
                   placeholder="Password"
                   required
-                   className="peer block w-full appearance-none placeholder:text-gray-400 border border-black-10 bg-white px-3.5 p-2.5 focus:outline-none h-[48px] rounded-6 text-black-100 placeholder-transparent focus:border-black-10"
+                   className="peer block w-full appearance-none placeholder:text-gray-400 border border-black-10 bg-white px-3.5 p-2.5 focus:outline-none h-[48px] rounded-6 text-black-100 text-[16px] leading-[20px] font-normal placeholder-transparent focus:border-black-10"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   autoComplete="new-password"
@@ -76,7 +77,7 @@ export default function LoginForm() {
                     width="24"
                     height="24"
                     decoding="async"
-                    src={!showPassword ? "/eyeoff.svg" : "/eye.svg"}
+                    src={showPassword ? "/eyeoff.svg" : "/eye.svg"}
                   />
                 </button>
               </div>

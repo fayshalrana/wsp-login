@@ -1,6 +1,6 @@
 "use client";
 
-import { fontBodyNormal, fontBigTypoDesktop } from "@/styles/typography";
+import { fontBodyNormal, fontBigTypoDesktop, fontTitle1 } from "@/styles/typography";
 import Image from "next/image"; 
 import logo from "@/icons/Logo-primary.svg";
 import logoWhite from "@/icons/logo.png";
@@ -10,8 +10,9 @@ const BG = "https://s3-alpha-sig.figma.com/img/97c5/77dd/b047dd3c09ed673e80bc7a6
 export default function ServicePanel() {
   return (
  <>
-    <div className="flex items-center gap-2 w-full justify-center lg:hidden">
-    <Image src={logo} alt="Logo" width={80} height={40} className="w-[10rem] h-auto" />
+    <div className="flex items-center w-full justify-center lg:hidden flex-col ">
+    <Image src={logo} alt="Logo" width={80} height={40} className="w-auto max-w-[10rem] h-auto" />
+    <h2 className={`${fontTitle1} text-gray-900 lg:hidden leading-0`}>Service Panel</h2>
     </div>
     <div className="relative hidden w-1/4 min-w-[480px] overflow-hidden rounded-5 p-4 lg:flex">
       {/* Background Image */}

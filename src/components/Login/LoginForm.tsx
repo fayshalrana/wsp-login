@@ -20,7 +20,6 @@ export default function LoginForm() {
         {/* Welcome Message */}
         <div className="text-center">
           <h2 className={`${fontTitle1} text-gray-900`}>Welcome Back</h2>
-          <h2 className={`${fontTitle1} text-gray-900 lg:hidden leading-0`}>Service Panel</h2>
           <p className={`${fontBodyNormal} text-gray-600 mt-2`}>
             Manage, streamline, and thrive effortlessly.
           </p>
